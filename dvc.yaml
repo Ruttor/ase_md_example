@@ -1,0 +1,8 @@
+stages:
+    GetAtoms:
+        cmd: 'python3 -c "from main import GetAtoms; GetAtoms.load(name=''GetAtoms'').run_and_save()" '
+        desc: Atome abholen
+        outs:
+        - nodes/GetAtoms/outs.json
+        params:
+        - GetAtoms
