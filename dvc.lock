@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  GetAtoms:
+    cmd: "python3 -c \"from main import GetAtoms; GetAtoms.load(name='GetAtoms').run_and_save()\"\
+      \ "
+    params:
+      params.yaml:
+        GetAtoms:
+          size: 2
+    outs:
+    - path: nodes/GetAtoms/outs.json
+      md5: b12e71a38eee66275c0c4bd5d7380d62
+      size: 2522
